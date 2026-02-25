@@ -2,7 +2,7 @@ repositories:
   # system (includes ackermann_mux, vesc, teleop_tools)
   src/f1tenth_system:
     type: git
-    url: https://github.com/f1tenth/f1tenth_system.git
+    url: https://github.com/fish-mouse/f1tenth_system.git
     version: humble-devel
 
   # SICK LIDAR
