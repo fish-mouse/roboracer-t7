@@ -35,10 +35,13 @@
     WORKDIR /race_ws
     COPY docker/racer.repos .
     
-    # 4. DOWNLOAD DRIVERS
-    RUN mkdir src
+    # 4. DOWNLOAD REPOS
+    RUN mkdir -p src
     RUN vcs import . < racer.repos
+
     COPY src ./src
+
+    RUN git -C /race_ws/src/f1tenth_system submodule update --init --recursive
 
     # 5. BUILD THE SYSTEM
     RUN . /opt/ros/humble/setup.sh && \
