@@ -8,12 +8,12 @@ repositories:
   # Livox ROS2 driver (Mid-360)
   src/drivers/livox_ros_driver2:
     type: git
-    url: https://github.com/Livox-SDK/livox_ros_driver2.git
+    url: https://github.com/fish-mouse/livox_ros_driver2
     version: master
 
   # Livox SDK2 (dependency used by livox_ros_driver2)
   # Put outside src/ so colcon doesn't try to treat it as a ROS package
   livox_sdk2:
     type: git
-    url: https://github.com/Triton-AI/Livox-SDK2.git
+    url: https://github.com/fish-mouse/Livox-SDK2
     version: master
